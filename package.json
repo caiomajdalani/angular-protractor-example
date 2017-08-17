@@ -1,0 +1,16 @@
+{
+  "name": "angular-protractor",
+  "version": "1.0.0",
+  "description": "Exemplo de Testes Automatizados usando diretivas Angular com Protractor",
+  "main": "index.js",
+  "scripts": {
+    "updatewd": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "startwd": "node ./node_modules/protractor/bin/webdriver-manager start",
+    "test": "protractor protractor.conf.js"
+  },
+  "author": "Caio Majdalani",
+  "license": "ISC",
+  "devDependencies": {
+    "protractor": "^5.1.2"
+  }
+}
