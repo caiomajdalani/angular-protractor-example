@@ -6,11 +6,13 @@
   "scripts": {
     "updatewd": "node ./node_modules/protractor/bin/webdriver-manager update",
     "startwd": "node ./node_modules/protractor/bin/webdriver-manager start",
-    "test": "protractor protractor.conf.js"
+    "test": "protractor protractor.conf.js",
+    "report": "allure generate --clean"
   },
   "author": "Caio Majdalani",
   "license": "ISC",
   "devDependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
     "protractor": "^5.1.2"
   }
 }

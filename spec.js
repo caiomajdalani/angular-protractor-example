@@ -17,14 +17,14 @@ describe('Protractor Demo App', function () {
 		element(by.model('second')).sendKeys(2);
 
 		element(by.id('gobutton')).click();
-
+		browser.sleep(3000);
 		expect(element(by.binding('latest')).getText()).
 			toEqual('5'); // This is wrong!
 	});
 });
 
 //writing multiple scenarios
-describe('Protractor Demo App', function () {
+describe('Protractor Demo App 2', function () {
 	var firstNumber = element(by.model('first'));
 	var secondNumber = element(by.model('second'));
 	var goButton = element(by.id('gobutton'));
@@ -43,7 +43,7 @@ describe('Protractor Demo App', function () {
 		secondNumber.sendKeys(2);
 
 		goButton.click();
-
+		browser.sleep(3000);
 		expect(latestResult.getText()).toEqual('3');
 	});
 
@@ -52,7 +52,7 @@ describe('Protractor Demo App', function () {
 		secondNumber.sendKeys(6);
 
 		goButton.click();
-
+		browser.sleep(3000);
 		expect(latestResult.getText()).toEqual('10');
 	});
 });
@@ -69,6 +69,7 @@ describe('Protractor Demo App', function () {
 		firstNumber.sendKeys(a);
 		secondNumber.sendKeys(b);
 		goButton.click();
+		browser.sleep(3000);
 	}
 
 	beforeEach(function () {
