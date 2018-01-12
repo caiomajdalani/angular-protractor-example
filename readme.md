@@ -22,11 +22,17 @@ Too run tests in terminal, type:
 To gerenate report (and clear the older one):
 
 ```
-  npm report
+  npm run report
   or
   allure generate --clean
 ```
 
 ## Reports
 
-1. To see reports, open allure-report/index.html on firefox
+1. To see reports:
+
+```
+  npm run displayReports
+  or
+  allure serve
+```

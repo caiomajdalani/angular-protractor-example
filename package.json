@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "updatewd": "node ./node_modules/protractor/bin/webdriver-manager update",
-    "startwd": "node ./node_modules/protractor/bin/webdriver-manager start",
+    "displayReports": "allure serve",
     "test": "protractor protractor.conf.js",
     "report": "allure generate --clean"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.1.2"
   }
 }
